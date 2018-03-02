@@ -1,0 +1,3 @@
+*/%(update_interval_minutes)d   * * * *    %(home_dir)s/update.sh
+@reboot                                    %(home_dir)s/update.sh
+*/%(refresh_interval_minutes)d  * * * *    export DISPLAY=:0.0 && xdotool key ctrl+r
